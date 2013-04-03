@@ -1,0 +1,28 @@
+<% provide(:title, 'Inicio') %>
+<p class="niceText">Bienvenido a Cocoa Desserts!</p>
+<% link_to "", "#", id: "slide-next"%>
+<% link_to "", "#", id: "slide-prev"%>
+<div id="slider">
+	<div class="slide cs-activeSlide"> 
+		<%= link_to image_tag("pastelFresasMango.jpg", alt: "Pastel de Fresas con Mango", width: "400px", height: "300px"), "#" %></div>
+	<!-- Slide with Link --><!-- 
+	<div class="slide"> <img src="../Images/payDurazno.jpg" width="400px" height="300px"/> </div>
+	<div class="slide"> <img src="../Images/pastelFresas.jpg" width="400px" height="300px"/> </div>
+	<div class="slide"> <img src="../Images/payTortuga.jpg" width="400px" height="300px"/> </div> -->
+</div>
+<!-- If you want to use Captions -->
+<div class="slide-captions">
+	<div class="sl-descr"></div>
+	<div class="sl-descr"></div>
+	<!-- Empty caption-->
+	<div class="sl-descr"></div>
+	<div class="sl-descr"></div>
+</div>
+<div class="caption"></div>
+<!-- If you want to use Pagination -->
+<div class="pagination">
+	<span class="slider-pagination"></span>
+	<span class="slider-pagination"></span>
+	<span class="slider-pagination"></span>
+	<span class="slider-pagination"></span>
+</div>

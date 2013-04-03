@@ -1,0 +1,62 @@
+<form>
+	<table>
+		<tr>
+			<td style="padding-left: 50px; padding-right: 50px;">
+				<!-- <div>
+					<?php if(isset($tiposDePostres)) { ?>
+						<span style="position: fixed;"><img width="100px" height="100px"/></span>
+						<?php foreach($tiposDePostre as $tipoDePostre) { ?>
+							<fieldset class="fieldPedidos" style="height: 200px; overflow: scroll;">
+								<legend><?php echo $tipoDePostre['Nombre']; ?></legend>
+								<table class="tablaPedidos">
+									<tbody>
+										<tr>
+											<td>
+												<select>
+													<option value="0">Selecciona un producto</option>
+													<?php foreach($postres[$tipoDePostre['ID_TipoPostre']] as $postre) { echo "<option value='".$postre['ID_Articulo']."'>".$postre['Nombre']."</option>"; } ?>
+												</select>
+											</td>
+											<td>
+												<input type="text" placeholder="Cantidad" size="5" maxlength="3"/>
+											</td>
+											<td>
+												<input type="text" placeholder="Total" style="display: block;" />
+											</td>
+										</tr>
+										<tr>
+											<td align="left"><input type="button" value="M&aacute;s" /></td>
+										</tr>
+									</tbody>
+								</table>
+							</fieldset>
+						<?php } ?>
+					<?php } else { echo "<div id='contentDatos' class='niceText' style='font-size: 60%;'><center>Ocurri&oacute; un error en la p&aacute;gina, por favor intenta m&aacute;s tarde! =)</center></div>";  } ?>
+				</div> -->
+				<div id='contentDatos' class='niceText' style='font-size: 60%;'>
+					<center>Nuestro catálogo está vacío en estos momentos, por favor intenta más tarde! =)</center>
+				</div>
+			</td>
+			<td style="padding-left: 50px; padding-right: 50px;">
+				<div id="frameDatos">
+					<div id="contentDatos">
+						<center class="niceText" style="font-size: 450%;">Tus datos:</center>
+						<br />
+						<br />
+						<br />
+						<table>
+							<tr><td class="textField nice">Nombre:</td><td><input id="nombre" name="nombre" type="text" /></td>
+							<tr><td class="textField nice" >Correo:</td><td><input id="email" name="email" type="text" /></td>
+							<tr><td class="textField nice" >Telefono:</td><td><input id="phone" name="phone" type="text" /></td>
+							<tr><td class="textField nice" >Comentarios:</td></tr>
+						</table>
+						<textarea style="width: 275px; height: 100px; margin: 2px;"></textarea>
+						<br />
+						<br />
+						<input type="submit" value="Enviar Pedido"/>
+					</div>
+				</div>
+			</td>
+		</tr>
+	</table>
+</form>

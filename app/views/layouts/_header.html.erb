@@ -1,0 +1,11 @@
+<div id="header", media="screen and (max-device-width: 480px)">
+	<div id="navbar"> 
+		<ul> 
+			<li><%= link_to "Inicio", root_path, class: (current_page?(root_path))? "selectedTab" : nil %></li> 
+			<li><%= link_to "Catálogo", "#", class: (current_page?("#"))? "selectedTab" : nil %></li>
+			<li><%= link_to image_tag("logo.jpg", alt: "Inicio", id: "logo"), root_path %></li>
+			<li><%= link_to "Pedidos", pedidos_path, class:  (current_page?(pedidos_path))? "selectedTab" : nil %></li>
+			<li><%= link_to "Contacto", contacto_path, class:  (current_page?(contacto_path))? "selectedTab" : nil %></li>
+		</ul>
+	</div>
+</div>

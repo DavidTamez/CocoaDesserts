@@ -1,0 +1,77 @@
+/*---------- Main Slider Container----------- */
+#slider {
+	width:400px;
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	z-index:2;
+	display:block;
+}
+/* Every slide must be hidden by default */
+.slide { 
+	width:400px;
+	height:300px; 
+	display:none; 
+}
+
+/* 
+   And only the slide with "cs-activeSlide" class must be visible!
+   !Reserved Class name. Required class! 
+*/
+.cs-activeSlide { display:block; }
+
+/* Container with caption's text. Must be hidden */
+.slide-descriptions {
+	display:none;
+}
+
+/* Container with caption, must be hidden by default */
+.caption {
+    color: #FFFFFF;
+    display: none;
+    height: 280px;
+    padding: 20px;
+    position: absolute;
+    right: 40px;
+    top: 140px;
+    width: 180px;
+    z-index: 3;
+}
+.full-3D {
+	right: 40px;
+    top: 580px;
+	height:300px;
+}
+/* Container with Pagination buttons */
+.pagination {
+	/*bottom: 50px;*/
+    left: 400px;
+    margin-top: 15px;
+    position: absolute;
+    text-align: center;
+}
+.slider-pagination {
+	display:inline-block;
+	width:15px;
+	height:10px;
+	margin:0 10px;
+	cursor:pointer;
+	position:relative;
+	z-index:200;
+}
+/* This is a required class for the "Active" pagination button. ! Reserved Class Name ! */
+.cs-active-pagination {
+}
+
+#slider-1 {
+	height:300px;
+	margin-left:auto;
+	margin-right:auto;
+	position:relative;
+	z-index:2;
+	display:block;
+}
+.cs-activeSlide-2 {
+	display:block
+}

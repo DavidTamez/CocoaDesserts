@@ -1,4 +1,14 @@
 CocoaDesserts::Application.routes.draw do
+  # resources :pedidos
+
+  root to: "static_pages#inicio"
+  
+  match "/contacto", to: "static_pages#contacto"
+  match "/pedidos", to: "static_pages#pedidos"
+ 
+  # match "/signup", to: "users#new"
+  
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
